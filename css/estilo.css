@@ -1,0 +1,155 @@
+
+body {
+    font-family: arial;
+    background-image: url('../img/fondo.png');
+    max-width: 1000px;
+    margin: 0 auto;
+    /* Centrado */
+}
+
+header {
+    text-align: center;
+    min-height: 100px;
+    margin-bottom: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+nav, footer {
+    border-radius: 15px;
+    opacity: 85%;
+    clear: both;
+    margin-bottom: 10px;
+    padding: 4px;
+    text-align: center;
+    background-color: #c08810;
+    font-size: 80%;
+}
+
+section {
+    position: center;
+    width: 45%;
+    min-width: 300px;
+    margin: 0px 0px 15px 0px;
+    padding: 15px 5px 5px 5px;
+    background-color: beige;
+    box-shadow: 3px 3px 3px 3px rgba(50, 50, 50, .75);
+}
+
+h1 {
+    text-align: center;
+    font-size: 120%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: rgb(11, 9, 37);
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+#logo {
+    float: left;
+    max-width: 15%;
+    min-width: 5%;
+}
+
+#logo2 {
+    float: center;
+    max-width: 85%;
+    min-width: 70%;
+}
+
+form{
+    position: center;
+}
+
+label{
+    font-size: 30px;
+    color:rgb(215, 213, 235);
+}
+    
+
+
+#eslogan {
+    float: center;
+    font-style: italic;
+    margin: 5% 5%;
+    font-size:28px;
+    color: rgb(11, 9, 37);
+}
+
+#registro {
+    position: center;
+    top: 5px;
+    right: 10%;
+}
+
+table { background-color:#88d2e9;
+    
+    opacity: 87%;
+    position: center;
+    border-collapse:collapse;
+    color:#000;
+    font-size:18px;
+    border:1px;
+    margin: 10px auto; }
+th { background-color:#BDB76B; }
+td, th { border: 1px solid;padding:1px;width: 10%; }
+td { border-bottom:1px dotted #BDB76B; }
+
+
+#registro a:hover {
+    position: center;
+    color: blue;
+}
+
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #aaaaaa;
+}
+
+nav li {
+    display: inline;
+    padding: 0 40px 0 0;
+}
+
+section#blog {
+    float: right;
+}
+
+.valoracion-usuario {
+    font-style: italic;
+}
+
+.botonleermas {
+    font-size: 80%;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.izq {
+    float: left;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.centr {
+    float: center;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.der {
+    margin-top: 0px;
+    text-align: right;
+}
