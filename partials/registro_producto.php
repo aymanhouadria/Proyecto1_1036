@@ -13,13 +13,46 @@
 		<input type="text" name="price" class="item_requerid" size="20" maxlength="25" value=""
 		 placeholder="precio" />
 		<br/>
-		<label for="foto_url">Foto</label>
+		<label for="url">Foto</label>
 		<br/>
-		<input type="url" name="foto_url" class="item_requerid" size="8" maxlength="25" value=""
-		/>
+		<?php
+		if ( count($_FILES) < 1){
+			echo '<input id ="url" name="url" type="url" href="" class="item_requerid" size="8" maxlength="50" value="" readonly" />';
+
+
+		}
+		else{
+			$VAR= $_FILES["inpFile"]["name"];
+			echo "<input id ='url' name='url' type='text' href='/uploads/$VAR'  class='item_requerid' size='8' maxlength='50' value='/uploads/$VAR'  />";
+			
+		}
+		?>
+		
+		<input type="button" value="Subir Foto" onclick="showHidde()">
+		
+		
 		<br/>
-		<p><input type="submit" value="Enviar">
+		<p><input type="submit" onclick="return enviarFormulario();"value="Enviar">
 		<input type="reset" value="Deshacer">
 		</p>
 	</form>
+
+	<form id="caja" action="?action=upload" method="post" enctype="multipart/form-data">
+		
+		Selecciona	una	imagen:
+		<input type="file" accept="image/*" name="inpFile" id="inpFile">
+		<input id="button" type="button" value="X" onclick="hide()" name="button" >
+		<div class="image-preview" id="imagePreview">
+			<img src="" alt="Image Preview" class="image-preview__image">
+			<span class="image-preview__default-text">Image Preview</span>
+		</div>
+		
+		<input id="subir" disabled="true" type="submit" value="SUBIR" name="submit" >
+	</form>
+
+	
+
+	
+
+	
 </main>

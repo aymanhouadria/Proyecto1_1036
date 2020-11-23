@@ -7,6 +7,8 @@ body {
     /* Centrado */
 }
 
+
+
 header {
     text-align: center;
     min-height: 100px;
@@ -71,6 +73,27 @@ label{
     font-size: 30px;
     color:rgb(215, 213, 235);
 }
+
+.image-preview {
+    width:300px;
+    min-height:100px;
+    border: 2px solid #000;
+    margin-top: 15px;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:bold ;
+    color: #aaaaaa;
+
+
+}
+
+.image-preview__image {
+    display: none;
+    width: 100%;
+
+}
     
 
 
@@ -80,6 +103,20 @@ label{
     margin: 5% 5%;
     font-size:28px;
     color: rgb(11, 9, 37);
+}
+
+#caja {
+    float: right;
+    display: none;
+
+    border: 2px solid #000;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #aaaaaa;
+
+    color: #000000;
+
 }
 
 #registro {

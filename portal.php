@@ -20,6 +20,7 @@ include(dirname(__FILE__)."/partials/header.php");
 include(dirname(__FILE__)."/partials/menu.php");
 include(dirname(__FILE__)."/includes/conector_BD.php");
 include(dirname(__FILE__)."/includes/table2html.php");
+include(dirname(__FILE__)."/includes/subirImagen.php");
 
 include(dirname(__FILE__)."/includes/registrar_usuario.php");
 include(dirname(__FILE__)."/includes/encestar.php");
@@ -63,6 +64,10 @@ switch ($action) {
         break;
     case "registrar_producto":
         $central = "/partials/registro_producto.php"; //formulario producto
+        break;
+    case "upload":
+         subirImagen();
+         $central = "/partials/registro_producto.php"; 
         break;
     case "insertar_producto":
         $central = registrar_producto("productos"); //tabla productos
