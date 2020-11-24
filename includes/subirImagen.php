@@ -12,7 +12,7 @@ function subirImagen(){
         echo "Sorry, your file was not uploaded.";
         // if everything is ok, try to upload file
     } else {
-        if (move_uploaded_file($_FILES["inpFile"]["tmp_name"], $target_file.$imagen)) {
+        if (move_uploaded_file($_FILES["inpFile"]["tmp_name"], $target_file)) {
         echo "The file ". htmlspecialchars( basename( $_FILES["inpFile"]["name"])). " has been uploaded.";
   } else {
     echo "Sorry, there was an error uploading your file.";

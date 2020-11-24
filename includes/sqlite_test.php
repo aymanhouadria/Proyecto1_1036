@@ -29,7 +29,7 @@ if (0>$a) echo "No pude crear el usuario admin";
 $query = "CREATE TABLE IF NOT EXISTS $t_producto (product_id SERIAL PRIMARY KEY, 
                                     name CHAR(50) NOT NULL,
                                     price FLOAT NOT NULL,
-                                    foto_url VARCHAR(25) )";
+                                    foto_url VARCHAR(100) )";
 
 $a=ejecutarSQL($query,[]);
 

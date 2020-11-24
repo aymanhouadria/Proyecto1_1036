@@ -1,30 +1,25 @@
 
 
 function enviarFormulario(){
-
-    var nombre = document.getElementById('nombre');
-    var price = document.getElementById('price');
-    var url = document.getElementById('url');
-    var mensajeError = [];
-
-    if(nombre.value === null || nombre.value ===""){
-        mensajeError.push('ingresa el nombre del producto');
-
+    var form = document.form;
+    if(form.name.value ==0){
+            alert("Rellene el nombre")
+            form.nombre.focus();
+            return false;
     }
 
-    if(price.value === null || price.value ===""){
-        mensajeError.push('ingresa el precio');
-
+    if(form.price.value ==0){
+        alert("Rellene el precio")
+        form.price.focus();
+        return false;
     }
 
-    if(url.value === null || nombre.value ===""){
-        mensajeError.push('Sube la imagen');
-
+    if(form.url.value ==0){
+        alert("Suba una imagen")
+        form.url.focus();
+        return false;
     }
     
-    error.innerHTML = mensajeError.join(',');
-
-    return false;
     
 
     

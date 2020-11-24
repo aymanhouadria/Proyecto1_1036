@@ -17,6 +17,6 @@
 <script src="js/showHidde.js"></script>
 <script src="js/upload.js"></script>
 <script src="js/enviarFormulario.js"></script>
-<script src="hide.js"></script>
+<script src="js/hide.js"></script>
 
 </html>
