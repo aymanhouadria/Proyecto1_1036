@@ -12,7 +12,9 @@
 	</address>
 	
 </footer>
+
 </body>
+
 <script src="js/handleFiles.js"></script>
 <script src="js/showHidde.js"></script>
 <script src="js/upload.js"></script>

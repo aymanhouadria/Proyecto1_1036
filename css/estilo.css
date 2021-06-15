@@ -27,6 +27,15 @@ nav, footer {
     font-size: 80%;
 }
 
+#vis {
+    background-color: #c08810;
+    width: 500px;
+    height: 100px;
+    overflow-x: scroll;
+    display:flex;
+    margin: 0 auto;
+}
+
 section {
     position: center;
     width: 45%;

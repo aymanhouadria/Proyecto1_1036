@@ -16,11 +16,14 @@
 session_start();
 
 include(dirname(__FILE__)."/includes/ejecutarSQL.php");
+
+
 include(dirname(__FILE__)."/partials/header.php");
 include(dirname(__FILE__)."/partials/menu.php");
 include(dirname(__FILE__)."/includes/conector_BD.php");
-include(dirname(__FILE__)."/includes/table2html.php");
+
 include(dirname(__FILE__)."/includes/subirImagen.php");
+
 
 include(dirname(__FILE__)."/includes/registrar_usuario.php");
 include(dirname(__FILE__)."/includes/encestar.php");
@@ -28,6 +31,7 @@ include(dirname(__FILE__)."/includes/tabla_cesta.php");
 include(dirname(__FILE__)."/includes/eliminar_producto.php");
 include(dirname(__FILE__)."/includes/registrar_producto.php");
 include(dirname(__FILE__)."/includes/autentificar_usuario.php");
+include(dirname(__FILE__)."/includes/table2html.php");
 
 
 if (isset($_REQUEST['action'])) $action = $_REQUEST["action"];
@@ -40,6 +44,7 @@ switch ($action) {
     case "home":
         $central = "/partials/centro.php";
         break;
+ 
     case "login": 
         $central = "/partials/login.php"; //formulario login 
         break;
@@ -60,7 +65,7 @@ switch ($action) {
         $central = registrar_usuario("clientes"); //tabla usuarios
         break;
     case "listar_productos":
-        $central = table2html("productos"); //tabla productos
+        $central = "/includes/visor2.php"; //tabla productos
         break;
     case "registrar_producto":
         $central = "/partials/registro_producto.php"; //formulario producto

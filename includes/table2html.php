@@ -6,7 +6,12 @@ function table2html($table)
     global $cl_id;
     global $pr_id;
 
+    
     $cl_id = $_SESSION['id'];
+
+  
+
+    
     
 
     $query = "SELECT * FROM  $table;";

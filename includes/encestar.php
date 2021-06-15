@@ -19,6 +19,7 @@ function encestar($table)
     try { 
         
 
+       
         $consult = $pdo -> prepare($query2);
         $a = $consult->execute(array($_REQUEST['client_id'], $_REQUEST['product_id']  ));
 

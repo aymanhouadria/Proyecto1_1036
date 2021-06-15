@@ -8,7 +8,7 @@
 		</li>
 		<?php 
 		 
-		
+		 
 		 if (!isset($_SESSION['usuario'])){
 			echo '<li><a href="?action=login">Autentificar</a></li>';
 			echo '<li><a href="?action=registrar_usuario">Registrarme</a></li>';
