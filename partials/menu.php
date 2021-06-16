@@ -16,11 +16,13 @@
 		elseif (isset($_SESSION['usuario']) AND $_SESSION['usuario'][0] == 'a'){
 			echo '<li><a href="?action=registrar_producto">Registrar Producto</a></li>';
 			echo '<li><a href="?action=salir">Salir</a></li>';
+			
 		}
 		elseif (isset($_SESSION['usuario']) AND  $_SESSION['usuario'][0] == 'n'){
 			
 			echo '<li><a href="?action=ver_cesta">Cesta de Compra</a></li>';
 			echo '<li><a href="?action=salir">Salir</a></li>';
+			
 		}
         ?>
 	</ul>

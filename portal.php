@@ -18,6 +18,8 @@ session_start();
 include(dirname(__FILE__)."/includes/ejecutarSQL.php");
 
 
+
+
 include(dirname(__FILE__)."/partials/header.php");
 include(dirname(__FILE__)."/partials/menu.php");
 include(dirname(__FILE__)."/includes/conector_BD.php");
